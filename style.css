@@ -3,6 +3,42 @@ body {
 	margin: 0;
 	padding: 0;
 }
+body01{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+
+.landing-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+	background-image: url('img07.jpg');
+}
+
+.content {
+    text-align: left;
+    padding: 20px;
+	margin-top:600px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
 
 header {
 	background-color: #333;
@@ -38,6 +74,91 @@ footer {
 	padding: 10px 0;
 	text-align: center;
 }
+
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+.card p {
+    margin-top: 10px;
+}
+
+.rating {
+    margin-top: 10px;
+}
+
+.rating .star {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.rating .star:after {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+}
+
+.rating .star:nth-child(1):after {
+    transform: rotate(0deg);
+}
+
+.rating .star:nth-child(2):after {
+    transform: rotate(36deg);
+}
+
+.rating .star:nth-child(3):after {
+    transform: rotate(72deg);
+}
+
+.rating .star:nth-child(4):after {
+    transform: rotate(108deg);
+}
+
+.rating .star:nth-child(5):after {
+    transform: rotate(144deg);
+}
+
+.rating .star:nth-child(6):after {
+    transform: rotate(180deg);
+}
+
+.rating .star:nth-child(7):after {
+    transform: rotate(216deg);
+}
+
+.rating .star:nth-child(8):after {
+    transform: rotate(252deg);
+}
+
+.rating .star:nth-child(9):after {
+    transform: rotate(288deg);
+}
+
+.rating .star:nth-child(10):after {
+    transform: rotate(324deg);
+}
+
+.card input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+}
 .cards {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -52,16 +173,21 @@ footer {
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 16px;
+    grid-gap: 10px;
     justify-content: center;
 }
 
 .card {
-    background-color:orange;
+    background-color:whitesmoke;
     border-radius: 5px;
-    color: white;
+    color:black;
     padding: 24px 0 16px;
     text-align: center;
+    width:300px;
+	padding:20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+    margin: 20px auto;
 }
 h2{
     text-align: center;
@@ -69,3 +195,121 @@ h2{
 .centered {
     text-align: center;
 }
+.cardimg{
+    height:200px;
+    width:200px;
+}
+.testimonial-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonial {
+    margin-top: 20px;
+}
+
+.testimonial img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.testimonial p {
+    font-style: italic;
+}
+.carousel {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+	
+	text-align: center;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: carousel 10s infinite;
+	border-radius: 20px;
+}
+
+.carousel-item:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.carousel-item:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.carousel-item:nth-child(3) {
+    animation-delay: 4s;
+}
+
+.carousel-item:nth-child(4) {
+    animation-delay: 6s;
+}
+
+.carousel-item:nth-child(5) {
+    animation-delay: 8s;
+}
+
+@keyframes carousel {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+.newsletter-section, .social-media-section {
+    text-align: center;
+    padding: 20px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+input[type="email"], button {
+    padding: 5px 10px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 10px;
+}
+.book-now {
+	padding: 10px 20px;
+	margin-top: 10px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+ }
